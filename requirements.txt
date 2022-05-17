@@ -1,0 +1,11 @@
+flask==2.1.1
+flask-mysqldb==1.0.1
+flask-login==0.6.0
+flask_cors==3.0.10
+flask_sqlalchemy==2.5.1
+marshmallow-sqlalchemy==0.28.0
+pymysql
+mysql
+pyyaml==6.0
+pyjwt==2.0.0
+python-dotenv==0.20.0

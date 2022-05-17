@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome, {{ name }}!!!
+</h1>
+<div class="box-token">
+  <h1>API token generator</h1>
+  <form action="/profile" method="POST">
+    <!-- {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div{{ messages[0] }}></div>
+    {% endif %}
+    {% endwith %} -->
+    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+      <div class="field">
+        <div class="control">
+            <input class="input is-large" type="email" name="email" placeholder="Your email" autofocus="">
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+            <input class="input is-large" type="password" name="password" placeholder="Your Password">
+        </div>
+      </div>
+      <button>
+        {{ button_name }}
+      </button>
+    </form>
+    <div class="text-align-left">
+      <p>Your API key:</p>
+      <div class="token-only">{{ token }}</div>
+    </div>
+</div>
+{% endblock %}

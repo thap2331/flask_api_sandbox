@@ -1,0 +1,9 @@
+#yaml with configs
+db.yaml
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+#Folders
+venv

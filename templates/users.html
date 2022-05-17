@@ -1,0 +1,10 @@
+<table border=1>
+    <th>State</th>
+    <th>Abbreviation</th>
+    {% for state in d1 %}
+        <tr>
+            <td> {{state[0]}}</td>
+            <td> {{state[1]}}</td>
+        </tr>
+    {% endfor %}
+</table>
